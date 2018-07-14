@@ -1,0 +1,51 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.section-10-env-responsible{
+    display: block;
+    background-color: $section-10-background-color;
+    color: $section-10-text-color;
+    padding: 5.71rem 1.43rem 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $section-10-max-width;    
+}
+
+.container-section-10{
+    width: 100%;
+    max-width: $main-max-width;
+    padding: 0 1.43rem;
+    margin: 0 auto;
+}
+
+.container-section-10 .content-section-10{
+    max-width: 71.43rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-section-10 .content-section-10 h2{
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 2.28rem;
+    line-height: 2.85rem;
+    margin: 0 0 1.78rem;
+}
+.container-section-10 .content-section-10 p{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    margin: 0.71rem 0;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+.container-section-10 .image-section-10{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.43rem auto 0;
+}

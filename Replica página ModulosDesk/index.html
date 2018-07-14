@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+    <title>Modulos | The first fully modular desk system</title> <!--Muestra el t�tulo en el navegador-->
+    <meta charset="UTF-8">
+    <meta name="author" content="William David Martin Monta�o" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Modulos 2 |&nbsp;The first fully modular desk system"> <!--MetaEtiqueta para el t�tulo del sitio en el buscador-->
+    <meta name="description" content="With Modulos, you can customize your work surface to your own individual needs, then customize it again... and again... Get yours now!"> <!--MetaEtiqueta para poner la descripc��n del sitio en el buscador-->
+    <meta name="keywords" content="modulos, desk, modular desk, modular">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="ImagenCargada()" onscroll="ScrollSection06()">
+    <div id="raiz">
+        <main class="layout-main">
+            <header class="header">
+                <div class="container-header">
+                    <div class="container-menu-header">
+                        <div class="menu-izq-header">
+                            <a class="menu-link">Modules</a>
+                            <a class="menu-link">Legs</a>
+                            <a class="menu-link">Add-ons</a>
+                            <span class="menu-separator"></span>
+                            <button class="boton-menu-more" onclick="BotonMore()">
+                                <script> 
+                                function BotonMore(){
+                                    var menu_extra = document.getElementsByClassName("menu-extra");
+                                    var boton_menu = document.getElementsByClassName("boton-menu-more");
+                                    menu_extra[0].classList.toggle("menu-extra-visible");
+                                    boton_menu[0].classList.toggle("boton-menu-more-active");
+                                }
+                                </script>
+                                <svg aria-hidden="true" data-prefix="far" data-icon="ellipsis-h-alt" class="svg-menu-more" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M256 184c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm0 96c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24zm176-96c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm0 96c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24zM80 184c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm0 96c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24z"></path></svg>
+                            </button>
+                        </div>
+                        <a class="container-logo-centro-header" href="">
+                            <div class="logo-img" id="logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" style="enable-background:new 138 -26.9 311.8 87.9;" viewbox="138 -26.9 311.8 87.9" x="0px" y="0px" width="100%" height="100%" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                    <style type="text/css">
+                                        .st0{fill:#43525A;}
+                                        .st1{fill:none;stroke:#43525A;stroke-width:3.4016;stroke-miterlimit:10;}
+                                    </style>
+                                    <g id="XMLID_8_">
+                                        <path class="st0" id="XMLID_30_" style="stroke-dasharray: 157px, 159px; stroke-dashoffset: 0;" d="M 248.3 19 c 0.2 0.3 0.3 0.7 0.5 1 c 0.1 0.3 0.3 0.7 0.4 1.1 c 0.1 -0.4 0.3 -0.7 0.4 -1.1 c 0.2 -0.4 0.3 -0.7 0.5 -1 l 6.5 -12.1 c 0.1 -0.2 0.2 -0.3 0.3 -0.4 c 0.1 -0.1 0.2 -0.2 0.3 -0.2 s 0.2 -0.1 0.4 -0.1 c 0.1 0 0.3 0 0.5 0 h 3.1 v 21.9 h -3.6 V 14 c 0 -0.3 0 -0.5 0 -0.9 c 0 -0.3 0 -0.6 0.1 -1 l -6.6 12.4 c -0.2 0.3 -0.3 0.5 -0.6 0.7 c -0.2 0.2 -0.5 0.2 -0.8 0.2 h -0.6 c -0.3 0 -0.6 -0.1 -0.8 -0.2 c -0.2 -0.2 -0.4 -0.4 -0.6 -0.7 l -6.9 -12.4 c 0 0.3 0.1 0.7 0.1 1 s 0 0.6 0 0.9 v 14.1 h -3.6 V 6.3 h 3.1 c 0.2 0 0.3 0 0.5 0 c 0.1 0 0.3 0 0.4 0.1 c 0.1 0 0.2 0.1 0.3 0.2 c 0.1 0.1 0.2 0.2 0.3 0.4 L 248.3 19 Z" />
+                                        <path class="st0" id="XMLID_42_" style="stroke-dasharray: 117px, 119px; stroke-dashoffset: 0;" d="M 291 17.2 c 0 -1.2 -0.2 -2.3 -0.5 -3.2 c -0.3 -1 -0.8 -1.8 -1.4 -2.4 c -0.6 -0.7 -1.3 -1.2 -2.2 -1.5 c -0.9 -0.4 -1.8 -0.5 -2.9 -0.5 c -1.1 0 -2 0.2 -2.9 0.5 c -0.9 0.4 -1.6 0.9 -2.2 1.5 c -0.6 0.7 -1.1 1.5 -1.4 2.4 c -0.3 0.9 -0.5 2 -0.5 3.2 s 0.2 2.3 0.5 3.2 c 0.3 1 0.8 1.8 1.4 2.4 c 0.6 0.7 1.3 1.2 2.2 1.5 c 0.9 0.4 1.8 0.5 2.9 0.5 c 1.1 0 2 -0.2 2.9 -0.5 c 0.9 -0.4 1.6 -0.9 2.2 -1.5 c 0.6 -0.7 1.1 -1.5 1.4 -2.4 C 290.8 19.5 291 18.4 291 17.2 M 295.2 17.2 c 0 1.6 -0.3 3.1 -0.8 4.5 s -1.3 2.6 -2.3 3.5 c -1 1 -2.1 1.8 -3.5 2.3 c -1.4 0.6 -2.9 0.8 -4.5 0.8 c -1.7 0 -3.2 -0.3 -4.5 -0.8 c -1.4 -0.6 -2.5 -1.3 -3.5 -2.3 s -1.7 -2.2 -2.3 -3.5 c -0.5 -1.4 -0.8 -2.8 -0.8 -4.5 c 0 -1.6 0.3 -3.1 0.8 -4.5 s 1.3 -2.5 2.3 -3.5 s 2.1 -1.8 3.5 -2.3 c 1.4 -0.6 2.9 -0.8 4.5 -0.8 c 1.7 0 3.2 0.3 4.5 0.8 c 1.4 0.6 2.5 1.3 3.5 2.3 s 1.7 2.2 2.3 3.5 C 294.9 14.1 295.2 15.6 295.2 17.2 Z" />
+                                        <path class="st0" id="XMLID_39_" style="stroke-dasharray: 121px, 123px; stroke-dashoffset: 0;" d="M 322.4 17.2 c 0 -1.2 -0.2 -2.3 -0.5 -3.2 c -0.3 -1 -0.8 -1.8 -1.4 -2.4 c -0.6 -0.7 -1.3 -1.2 -2.2 -1.5 c -0.9 -0.4 -1.8 -0.5 -2.9 -0.5 h -4.2 V 25 h 4.2 c 1.1 0 2 -0.2 2.9 -0.5 c 0.9 -0.4 1.6 -0.9 2.2 -1.5 c 0.6 -0.7 1.1 -1.5 1.4 -2.4 C 322.2 19.5 322.4 18.4 322.4 17.2 M 326.5 17.2 c 0 1.6 -0.3 3.1 -0.8 4.4 c -0.5 1.3 -1.3 2.5 -2.3 3.5 s -2.1 1.7 -3.5 2.3 c -1.4 0.5 -2.9 0.8 -4.5 0.8 h -8.3 V 6.3 h 8.3 c 1.7 0 3.2 0.3 4.5 0.8 c 1.4 0.5 2.5 1.3 3.5 2.3 s 1.7 2.1 2.3 3.5 C 326.3 14.1 326.5 15.6 326.5 17.2 Z" />
+                                        <path class="st0" id="XMLID_25_" style="stroke-dasharray: 106px, 108px; stroke-dashoffset: 0;" d="M 347.3 24.8 c 0.8 0 1.5 -0.1 2.1 -0.4 c 0.6 -0.3 1.1 -0.6 1.6 -1.1 c 0.4 -0.5 0.8 -1 1 -1.7 c 0.2 -0.7 0.3 -1.4 0.3 -2.3 v -13 h 4.1 v 13.1 c 0 1.3 -0.2 2.5 -0.6 3.6 s -1 2.1 -1.8 2.9 c -0.8 0.8 -1.7 1.4 -2.9 1.9 c -1.1 0.4 -2.4 0.7 -3.8 0.7 s -2.7 -0.2 -3.8 -0.7 c -1.1 -0.4 -2.1 -1.1 -2.8 -1.9 c -0.8 -0.8 -1.4 -1.8 -1.8 -2.9 c -0.4 -1.1 -0.6 -2.3 -0.6 -3.6 V 6.3 h 4.1 v 13.1 c 0 0.8 0.1 1.6 0.3 2.3 s 0.5 1.3 1 1.7 c 0.4 0.5 0.9 0.8 1.6 1.1 C 345.8 24.7 346.5 24.8 347.3 24.8" />
+                                        <path class="st0" id="XMLID_24_" style="stroke-dasharray: 70px, 72px; stroke-dashoffset: 0;" d="M 373.3 24.8 L 382.1 24.8 L 382.1 28.1 L 369.3 28.1 L 369.3 6.3 L 373.3 6.3 Z" />
+                                        <path class="st0" id="XMLID_34_" style="stroke-dasharray: 117px, 119px; stroke-dashoffset: 0;" d="M 409.2 17.2 c 0 -1.2 -0.2 -2.3 -0.5 -3.2 c -0.3 -1 -0.8 -1.8 -1.4 -2.4 c -0.6 -0.7 -1.3 -1.2 -2.2 -1.5 c -0.9 -0.4 -1.8 -0.5 -2.9 -0.5 s -2 0.2 -2.9 0.5 c -0.9 0.4 -1.6 0.9 -2.2 1.5 c -0.6 0.7 -1.1 1.5 -1.4 2.4 s -0.5 2 -0.5 3.2 s 0.2 2.3 0.5 3.2 c 0.3 1 0.8 1.8 1.4 2.4 c 0.6 0.7 1.3 1.2 2.2 1.5 c 0.9 0.4 1.8 0.5 2.9 0.5 s 2 -0.2 2.9 -0.5 c 0.9 -0.4 1.6 -0.9 2.2 -1.5 c 0.6 -0.7 1.1 -1.5 1.4 -2.4 C 409.1 19.5 409.2 18.4 409.2 17.2 M 413.4 17.2 c 0 1.6 -0.3 3.1 -0.8 4.5 s -1.3 2.6 -2.3 3.5 c -1 1 -2.1 1.8 -3.5 2.3 c -1.4 0.6 -2.9 0.8 -4.5 0.8 s -3.2 -0.3 -4.5 -0.8 c -1.4 -0.6 -2.5 -1.3 -3.5 -2.3 s -1.7 -2.2 -2.3 -3.5 c -0.5 -1.4 -0.8 -2.8 -0.8 -4.5 c 0 -1.6 0.3 -3.1 0.8 -4.5 s 1.3 -2.5 2.3 -3.5 s 2.1 -1.8 3.5 -2.3 c 1.4 -0.6 2.9 -0.8 4.5 -0.8 s 3.2 0.3 4.5 0.8 c 1.4 0.6 2.5 1.3 3.5 2.3 s 1.7 2.2 2.3 3.5 C 413.1 14.1 413.4 15.6 413.4 17.2 Z" />
+                                        <path class="st0" id="XMLID_21_" style="stroke-dasharray: 94px, 96px; stroke-dashoffset: 0;" d="M 437.1 10.2 c -0.1 0.2 -0.2 0.4 -0.4 0.5 c -0.1 0.1 -0.3 0.1 -0.5 0.1 s -0.4 -0.1 -0.7 -0.2 c -0.3 -0.2 -0.5 -0.3 -0.9 -0.5 c -0.3 -0.2 -0.7 -0.4 -1.2 -0.5 c -0.5 -0.2 -1 -0.2 -1.6 -0.2 s -1.1 0.1 -1.5 0.2 c -0.4 0.1 -0.8 0.3 -1.1 0.6 c -0.3 0.2 -0.5 0.5 -0.6 0.9 c -0.1 0.3 -0.2 0.7 -0.2 1.1 c 0 0.5 0.1 0.9 0.4 1.3 c 0.3 0.3 0.7 0.6 1.1 0.9 c 0.5 0.2 1 0.5 1.6 0.7 s 1.2 0.4 1.9 0.6 c 0.6 0.2 1.2 0.5 1.8 0.8 c 0.6 0.3 1.1 0.7 1.6 1.1 c 0.5 0.4 0.9 1 1.1 1.6 c 0.3 0.6 0.4 1.4 0.4 2.3 c 0 1 -0.2 1.9 -0.5 2.8 c -0.3 0.9 -0.8 1.6 -1.5 2.3 c -0.7 0.6 -1.4 1.1 -2.4 1.5 c -0.9 0.4 -2 0.5 -3.2 0.5 c -0.7 0 -1.4 -0.1 -2.1 -0.2 c -0.7 -0.1 -1.3 -0.3 -1.9 -0.6 s -1.2 -0.6 -1.7 -0.9 c -0.5 -0.4 -1 -0.7 -1.4 -1.2 l 1.2 -2 c 0.1 -0.1 0.2 -0.3 0.4 -0.4 c 0.2 -0.1 0.3 -0.1 0.5 -0.1 c 0.3 0 0.5 0.1 0.8 0.3 s 0.6 0.4 1 0.7 s 0.9 0.5 1.4 0.7 s 1.2 0.3 1.9 0.3 c 1.2 0 2.1 -0.3 2.7 -0.8 s 1 -1.3 1 -2.4 c 0 -0.6 -0.1 -1 -0.4 -1.4 s -0.7 -0.7 -1.1 -0.9 c -0.5 -0.2 -1 -0.5 -1.6 -0.6 c -0.6 -0.2 -1.2 -0.4 -1.8 -0.6 c -0.6 -0.2 -1.2 -0.4 -1.8 -0.7 c -0.6 -0.3 -1.1 -0.7 -1.6 -1.1 c -0.5 -0.5 -0.9 -1 -1.1 -1.7 c -0.3 -0.7 -0.4 -1.5 -0.4 -2.5 c 0 -0.8 0.2 -1.6 0.5 -2.3 c 0.3 -0.8 0.8 -1.4 1.4 -2 s 1.4 -1.1 2.2 -1.4 c 0.9 -0.4 1.9 -0.5 3 -0.5 c 1.3 0 2.5 0.2 3.6 0.6 c 1.1 0.4 2 1 2.8 1.7 L 437.1 10.2 Z" />
+                                    </g>
+                                    <g>
+                                        <path class="st1" style="stroke-dasharray: 198px, 200px; stroke-dashoffset: 0;" d="M 157.5 12.7 L 157.5 26.8 L 156.7 26.3 L 156.7 10.2 L 185.2 29.2 L 213.7 10.2 L 213.7 26.3 L 212.9 26.8 L 212.9 12.7 L 185.2 31.1 Z" />
+                                        <path class="st1" style="stroke-dasharray: 115px, 117px; stroke-dashoffset: 0;" d="M 161.4 4.8 L 185.2 -11.1 L 208.9 4.8 L 207.8 5.5 L 185.2 -9.6 L 162.5 5.5 Z" />
+                                        <path class="st1" style="stroke-dasharray: 100px, 102px; stroke-dashoffset: 0;" d="M 165.1 31.9 L 165.1 30.3 L 185.2 43.7 L 205.3 30.3 L 205.3 31.9 L 185.2 45.2 Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="menu-der-header">
+                            <a class="menu-link">For Business</a>
+                            <a class="menu-link">Shipping</a>
+                            <span class="menu-separator"></span>
+                            <a class="menu-configurator">Configure yours!</a>
+                            <span class="menu-separator"></span>
+                            <a class="menu-carrito">
+                                <svg aria-hidden="true" data-prefix="far" data-icon="shopping-cart" class="svg-carrito" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path fill="currentColor" d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-extra">
+                        <a class="menu-link">Materials</a>
+                        <a class="menu-link">About Modulos</a>
+                        <a class="menu-link">Our Story</a>
+                        <a class="menu-link">Contact</a>
+                    </div>
+                </div>
+            </header>
+            <main>
+              <section class="section-01-index">
+                <div class="container-section-01">
+                  <div class="content-section-01">
+                    <h1>The first truly modular desk system</h1>
+                    <p>We combine utility, craftsmanship and perfectionism to create the only desk that gives you absolute freedom in organizing, upgrading and changing your workspace.</p>
+                    <div class="container-link-section-01">
+                      <div class="double-link-section-01">
+                        <a class="link-1-section-01">Configure yours!</a>
+                        <a class="link-2-section-01">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-image-section-01">
+                    <img class="image-section-01" src="img/Section-01-Desk.png" alt="Section 01 - Desk">
+                    <script>
+                        function ImagenCargada() {
+                            //alert("Image loaded: " + document.getElementsByClassName("image-section-01")[0].complete);
+                            var img_section01 = document.getElementsByClassName("container-image-section-01");
+                            img_section01[0].classList.add("on-image-loaded");
+                        }
+                    </script>
+                  </div>
+                </div>
+              </section>
+              <section class="section-02-surface">
+                  <img class="image-section-02" src="img/Section-02-Surface-Modules.jpg" alt="Section 02 - Surface Modules">
+                  <div class="content-section-02">
+                    <h2>A surface made of modules</h2>
+                    <p>Modulos surface is comprised of Modules - surface tiles each capable of being connected to another one in any direction providing you with infinite possibilities. Since there are various models of modules with different functionalities available, you can create a surface that works the best for you, with functionalities spread out exactly how you like them.</p>
+                    <p>And if you need to change your desk, you can simply rearrange or add new modules. No need to throw your old desk just because your needs have changed - with Modulos, your desk follows the change of your needs!</p>
+                    <div class="container-link-section-02">
+                        <div class="single-link-section-02">
+                            <a class="link-section-02">Shop available modules</a>
+                        </div>
+                    </div>
+                  </div>
+              </section>
+              <section class="section-03-super-practical">
+                  <div class="intro-section-03">
+                    <h2>Super practical</h2>
+                    <p>Getting your new Modulos desk is a breeze! Simply configure your desk, order it and easily assemble it once it arrives! And the beautiful thing is that you can reconfigure your desk later or upgrade it by ordering new modules or legs. Never again experience issues when moving into a new space or redecorating your existing one.</p>
+                  </div>
+                  <div class="container-items-section-03">
+                    <div class="item-section-03">
+                        <div class="item-image-section-03">
+                            <img src="img/Section-03-Item-01.png" alt="Create your configuration">
+                        </div>
+                        <h3>Create your configuration</h3>
+                        <p>Use our simple and powerful configurator to create your own desk configuration or, alternatively, add element by element to cart.</p>
+                    </div>
+                    <div class="item-section-03">
+                        <div class="item-image-section-03">
+                            <img src="img/Section-03-Item-02.png" alt="Assemble it and enjoy">
+                        </div>
+                        <h3>Assemble it and enjoy</h3>
+                        <p>Easily assemble your desk once it arrives - we supply you with all the tools needed for assembly.</p>
+                    </div>
+                    <div class="item-section-03">
+                        <div class="item-image-section-03">
+                            <img src="img/Section-03-Item-03.png" alt="Reconfigure / upgrade">
+                        </div>
+                        <h3>Reconfigure / upgrade</h3>
+                        <p>Damaged a part of surface? Decided to move or redecorate? Just reconfigure your desk and/or order additional elements from us!</p>
+                    </div>
+                  </div>
+              </section>
+              <section class="section-04-index-image-configurator">
+                  <div id="container-1" class="container-pin-section-04" style="top: 52%; left: 18%;">
+                    <button id="button-1" class="pin-button-section-04" onclick="Button_Click_Section_04(1)">
+                        <svg aria-hidden="true" data-prefix="fal" data-icon="plus" class="svg-inline-section-04" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M436 238H242V44c0-6.6-5.4-12-12-12h-12c-6.6 0-12 5.4-12 12v194H12c-6.6 0-12 5.4-12 12v12c0 6.6 5.4 12 12 12h194v194c0 6.6 5.4 12 12 12h12c6.6 0 12-5.4 12-12V274h194c6.6 0 12-5.4 12-12v-12c0-6.6-5.4-12-12-12z"></path></svg>
+                    </button>
+                    <div id="info-wrapper-1" class="info-wrapper-section-04">
+                        <div class="info-container-section-04">
+                            <div class="info-main-section-04">
+                                <span class="item-name-section-04">Twist Power Outlets Module (euro socket only)</span>
+                                <span class="separator-section-04"></span>
+                                <p class="item-description-section-04">Plug your devices right into your surface!</p>
+                                <span class="item-price-section-04">$269.00</span>
+                            </div>
+                            <div class="info-graphic-section-04">
+                                <img src="img/Section-04-Twist-Heritage-Oak.png" alt="Twist Power Outlets Module (euro socket only)">
+                                <span class="graphic-shadow-section-04"></span>                                
+                            </div>
+                            <a class="link-section-04">Learn more</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="container-2" class="container-pin-section-04" style="top: 60%; left: 65%;">
+                    <button id="button-2" class="pin-button-section-04" onclick="Button_Click_Section_04(2)">
+                        <svg aria-hidden="true" data-prefix="fal" data-icon="plus" class="svg-inline-section-04" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M436 238H242V44c0-6.6-5.4-12-12-12h-12c-6.6 0-12 5.4-12 12v194H12c-6.6 0-12 5.4-12 12v12c0 6.6 5.4 12 12 12h194v194c0 6.6 5.4 12 12 12h12c6.6 0 12-5.4 12-12V274h194c6.6 0 12-5.4 12-12v-12c0-6.6-5.4-12-12-12z"></path></svg>
+                    </button>
+                    <div id="info-wrapper-2" class="info-wrapper-section-04">
+                        <div class="info-container-section-04">
+                            <div class="info-main-section-04">
+                                <span class="item-name-section-04">Cabling Hole Module</span>
+                                <span class="separator-section-04"></span>
+                                <p class="item-description-section-04">Leads your cables from your surface.</p>
+                                <span class="item-price-section-04">$189.00</span>
+                            </div>
+                            <div class="info-graphic-section-04">
+                                <img src="img/Section-04-Cabling-Hole-Heritage-Oak.png" alt="Cabling Hole Module">
+                                <span class="graphic-shadow-section-04"></span>  
+                            </div>
+                            <a class="link-section-04">Learn more</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="container-3" class="container-pin-section-04" style="top: 70%; left: 70%;">
+                    <button id="button-3" class="pin-button-section-04" onclick="Button_Click_Section_04(3)">
+                        <svg aria-hidden="true" data-prefix="fal" data-icon="plus" class="svg-inline-section-04" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M436 238H242V44c0-6.6-5.4-12-12-12h-12c-6.6 0-12 5.4-12 12v194H12c-6.6 0-12 5.4-12 12v12c0 6.6 5.4 12 12 12h194v194c0 6.6 5.4 12 12 12h12c6.6 0 12-5.4 12-12V274h194c6.6 0 12-5.4 12-12v-12c0-6.6-5.4-12-12-12z"></path></svg>
+                    </button>
+                    <div id="info-wrapper-3" class="info-wrapper-section-04">
+                        <div class="info-container-section-04">
+                            <div class="info-main-section-04">
+                                <span class="item-name-section-04">Wooden cone leg</span>
+                                <span class="separator-section-04"></span>
+                                <p class="item-description-section-04">An elegant leg, made of exquisite wood.</p>
+                                <span class="item-price-section-04">$32.99</span>
+                            </div>
+                            <div class="info-graphic-section-04">
+                                <img src="img/Section-04-Leg-Wood-Cone.png" alt="Wooden Cone Leg">
+                                <span class="graphic-shadow-section-04"></span>  
+                            </div>
+                            <a class="link-section-04">Learn more</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="container-4" class="container-pin-section-04" style="top: 80%; left: 4%;">
+                    <button id="button-4" class="pin-button-section-04" onclick="Button_Click_Section_04(4)">
+                        <svg aria-hidden="true" data-prefix="fal" data-icon="plus" class="svg-inline-section-04" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M436 238H242V44c0-6.6-5.4-12-12-12h-12c-6.6 0-12 5.4-12 12v194H12c-6.6 0-12 5.4-12 12v12c0 6.6 5.4 12 12 12h194v194c0 6.6 5.4 12 12 12h12c6.6 0 12-5.4 12-12V274h194c6.6 0 12-5.4 12-12v-12c0-6.6-5.4-12-12-12z"></path></svg>
+                    </button>
+                    <div id="info-wrapper-4" class="info-wrapper-section-04">
+                        <div class="info-container-section-04 info-container-no-image-section-04">
+                            <div class="info-main-section-04">
+                                <span class="item-name-section-04">Configuration price</span>
+                                <span class="separator-section-04"></span>
+                                <p class="item-description-section-04">This configuration, made in exquisite Heritage Oak costs:</p>
+                                <span class="item-price-section-04">$1532.76</span>
+                            </div>
+                            <a class="link-section-04">Open in configurator</a>
+                        </div>
+                    </div>
+                  </div>
+                  <script>
+                      function Button_Click_Section_04(button) {
+                        switch(button){
+                            case 1:
+                                document.getElementById('container-1').classList.toggle('container-pin-active-section-04');
+                                document.getElementById('button-1').classList.toggle('pin-button-active-section-04');
+                                document.getElementById('info-wrapper-1').classList.toggle('info-wrapper-active-section-04');
+                                break;
+                            case 2:
+                                document.getElementById('container-2').classList.toggle('container-pin-active-section-04');
+                                document.getElementById('button-2').classList.toggle('pin-button-active-section-04');
+                                document.getElementById('info-wrapper-2').classList.toggle('info-wrapper-active-section-04');
+                                break;
+                            case 3:
+                                document.getElementById('container-3').classList.toggle('container-pin-active-section-04');
+                                document.getElementById('button-3').classList.toggle('pin-button-active-section-04');
+                                document.getElementById('info-wrapper-3').classList.toggle('info-wrapper-active-section-04');
+                                break;
+                            case 4:
+                                document.getElementById('container-4').classList.toggle('container-pin-active-section-04');
+                                document.getElementById('button-4').classList.toggle('pin-button-active-section-04');
+                                document.getElementById('info-wrapper-4').classList.toggle('info-wrapper-active-section-04');
+                                break;
+                        }
+                      }
+                  </script>
+              </section>
+              <section class="section-06-index-materials">
+                  <div class="materials-list-section-06">
+                      <div class="materials-preview-left-section-06">
+                          <img class="image-left-section-06" src="img/Section-06-Module-Cabling-Aeon.png" alt="Aeon">
+                          <span class="shadow-left-section-06"></span>
+                      </div>
+                      <div class="materials-text-section-06">
+                        <h2>Uncompromising material quality</h2>
+                        <p>We pride ourselves in our engineering and craftsmanship. However, we know that a top quality product starts with great materials. That’s why, since our very beginning, we have offered only the top quality materials for our modules. Our two product lines, <b>Aeon</b> and <b>Heritage</b>, are based on the materials used - Aeon being based on super hi-tech nano-based ultraresilient materials, and Heritage grounded in the beauty of top quality natural wood.</p>
+                        <a class="link-section-06">Learn more about our materials</a>
+                      </div>
+                      <div class="materials-preview-right-section-06">
+                          <img class="image-right-section-06" src="img/Section-06-Module-Cabling-Heritage.png" alt="Heritage">
+                          <span class="shadow-right-section-06"></span>
+                      </div>
+                      <script>
+                          function ScrollSection06() {
+                            var image_scroll = document.getElementsByClassName('image-left-section-06')[0];
+                            if ((image_scroll.getBoundingClientRect().top > 0) && (image_scroll.getBoundingClientRect().top < window.innerHeight)) {
+                                document.getElementsByClassName('image-left-section-06')[0].classList.add('image-left-section-06-inview');
+                                document.getElementsByClassName('image-right-section-06')[0].classList.add('image-right-section-06-inview');                                                                
+                            }else if (document.getElementsByClassName('image-left-section-06')[0].classList.contains('image-left-section-06-inview') == true) {
+                                document.getElementsByClassName('image-left-section-06')[0].classList.remove('image-left-section-06-inview');
+                                document.getElementsByClassName('image-right-section-06')[0].classList.remove('image-right-section-06-inview');
+                            }
+                          }
+                      </script>
+                  </div>
+              </section>
+              <section class="section-07-index-configurator">
+                  <div class="container-content-section-07">
+                      <div class="text-section-07">
+                        <h2>Configure your own desk using our configurator</h2>
+                        <p>You can shop on our website the old fashion way - browsing our site and adding items to cart. But what we also offer is a powerful configurator tool that allows you to create your own Modulos desk configuration, select and position legs, and even view it in 3D!</p>
+                        <div class="container-link-section-07">
+                            <div class="single-link-section-07">
+                                <a class="link-section-07">Configure yours!</a>
+                            </div>                            
+                        </div>
+                      </div>
+                      <div class="image-section-07"></div>
+                  </div>                  
+              </section>
+              <section class="section-08-newsletter-signup">
+                  <div class="intro-section-08">
+                    <h2>Sign up for our newsletter and follow us on social media</h2>
+                    <p>We are constantly working on expanding our product line, creating cool new modules and introducing new materials. We also use our newsletter to announce important updates and special offers. If you're interested, you can simply sign up by entering your email address below. You can also follow us on our social media channels: <a>Facebook</a>, <a>Instagram</a> and <a>Twitter</a>!</p>
+                    <h4>Sign up for our newsletter below and be among the first ones to know about our special offers, discounts and exciting new announcements!</h4>
+                  </div>
+                  <div class="signup-form-section-08">
+                      <div class="container-input-section-08">
+                        <input type="email" class="input-field-section-08" placeholder="Your email address">
+                        <button class="submit-button-section-08">Sign me up!</button>
+                      </div>
+                  </div>
+              </section>
+              <section class="section-09-instagram-feed"></section>
+              <section class="section-10-env-responsible">
+                <div class="container-section-10">
+                    <div class="content-section-10">
+                        <h2>Environmentally responsible by reducing waste</h2>
+                        <p>Currently there's a lot of material being just thrown away because the old desk got scratched in one place of the surface, it's leg broke, it's become too small or too big. The Modulos idea of owning a desk battles this wasteful practice. Why throw away good material and then cut down a bunch of trees for the new one, when you can replace only the part that you don't need or upgrade the whole thing?</p>
+                    </div>
+                    <img class="image-section-10" src="img/Section-10-Modulos.png" alt="Modulos is environmentally responsible in its core">
+                </div>
+              </section>
+            </main>
+            <footer class="footer">
+                <div class="container-footer">
+                    <a class="container-footer-logo" href="">
+                        <img class="container-footer-logo-img" src="img/Modulos-Logo.svg" alt="Modulos - Logo">
+                    </a>
+                    <ul class="container-footer-menu">
+                        <li class="footer-menu-group">
+                            <span class="footer-menu-item">Shop</span>
+                            <a class="footer-link" >Configure yours!</a>
+                            <a class="footer-link" >Modules</a>
+                            <a class="footer-link" >Legs</a>
+                            <a class="footer-link" >Add-ons</a>
+                        </li>
+                        <li class="footer-menu-group">
+                            <span class="footer-menu-item">About</span>
+                            <a class="footer-link" >Materials</a>
+                            <a class="footer-link" >About Modulos</a>
+                            <a class="footer-link" >Our Story</a>
+                        </li>
+                        <li class="footer-menu-group">
+                            <span class="footer-menu-item">Learn more</span>
+                            <a class="footer-link" >For Business</a>
+                            <a class="footer-link" >Contact</a>
+                        </li>
+                        <li class="footer-menu-group">
+                            <span class="footer-menu-item">Additional info</span>
+                            <a class="footer-link" >Shipping</a>
+                            <a class="footer-link" >Warranty and returns</a>
+                            <a class="footer-link" >Terms of Service</a>
+                            <a class="footer-link" >Privacy Policy</a>
+                        </li>
+                        <li class="footer-menu-group">
+                            <span class="footer-menu-item">Social media</span>
+                            <a class="footer-link" >Facebook</a>
+                            <a class="footer-link" >Instagram</a>
+                            <a class="footer-link" >Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright-footer">Copyright © 2018 Modulos Desk LLC. All rights reserved. Modulos design is patent-pending and industrial design protected.</p>
+                <div class="container-proud-member-footer">
+                    <span class="text-proud-member-footer">Proud member of:</span>
+                    <img class="logo-footer" src="img/TPZG-Logo.svg" alt="Technology Park Zagreb - Logo">
+                    <span class="separator-footer"></span>
+                    <img class="logo-footer" src="img/SFZG-Logo.svg" alt="Startup Factory Zagreb - Logo">
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

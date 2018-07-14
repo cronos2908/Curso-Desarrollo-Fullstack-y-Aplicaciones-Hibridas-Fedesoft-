@@ -1,0 +1,119 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.section-06-index-materials{
+    padding: 5.71rem 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $section-06-max-width;
+    margin: 0 auto;
+}
+
+.materials-list-section-06{
+    display: flex;
+    align-items: center;
+}
+
+.materials-list-section-06 .materials-preview-left-section-06{
+    position: relative;
+    flex: 0 0 16.14rem;
+    display: flex;
+    align-items: center;
+    width: 16.14rem;
+    height: 32.86rem;
+    overflow: hidden;
+}
+.materials-list-section-06 .materials-preview-left-section-06 .image-left-section-06{
+    transform: translateX(-21.85714rem);
+    width: 29.43rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: auto;
+    transition: 1.8s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: 0.2s;
+}
+.materials-list-section-06 .materials-preview-left-section-06 .image-left-section-06-inview{
+    transform: translateX(-14.71429rem);
+}
+.materials-list-section-06 .materials-preview-left-section-06 .shadow-left-section-06{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    border-radius: 100%;
+    z-index: 2;
+    height: 32.86rem;
+    width: 0.71rem;
+    background-color: $section-06-shadow-span-background-color;
+    filter: blur(10px);
+}
+
+.materials-list-section-06 .materials-text-section-06{
+    text-align: center;
+    margin: 0 4.28rem;
+    flex: 1 1 100%;
+}
+.materials-list-section-06 .materials-text-section-06 h2{
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 2.28rem;
+    line-height: 120%;
+    margin: 0 auto 2.14rem;
+}
+.materials-list-section-06 .materials-text-section-06 p{
+    font-size: 1rem;
+    line-height: 160%;
+    margin: 0;
+}
+.materials-list-section-06 .materials-text-section-06 .link-section-06{
+    padding: 0.86rem 1.78rem;
+    color: $section-06-link-text-color;
+    border: 0.14rem solid $section-06-link-border-color;
+    display: inline-block;
+    text-decoration: none;
+    margin: 2.86rem auto 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.14rem;
+}
+.materials-list-section-06 .materials-text-section-06 .link-section-06:hover{
+    cursor: pointer;
+    background-color: $section-06-link-hover-background-color;
+    color: $section-06-link-text-hover-color; 
+}
+
+.materials-list-section-06 .materials-preview-right-section-06{
+    position: relative;
+    flex: 0 0 16.14rem;
+    display: flex;
+    align-items: center;
+    width: 16.14rem;
+    height: 32.86rem;
+    overflow: hidden;    
+}
+.materials-list-section-06 .materials-preview-right-section-06 .image-right-section-06{
+    transform: translateX(8.57143rem);
+    width: 29.43rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: auto;
+    transition: 1.8s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: 0.2s;
+}
+.materials-list-section-06 .materials-preview-right-section-06 .image-right-section-06-inview{
+    transform: translateX(1.42857rem);
+}
+.materials-list-section-06 .materials-preview-right-section-06 .shadow-right-section-06{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -0.5rem;
+    border-radius: 100%;
+    z-index: 2;
+    height: 32.85714rem;
+    width: 0.71429rem;
+    background-color: $section-06-shadow-span-background-color;
+    filter: blur(10px);
+}

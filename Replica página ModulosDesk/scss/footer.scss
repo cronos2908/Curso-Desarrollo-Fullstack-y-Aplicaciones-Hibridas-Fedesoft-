@@ -1,0 +1,103 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.footer{
+    background-color: $footer-background-color;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: block;
+    padding-bottom: 3.5rem;
+}
+
+.container-footer{
+    border-top: 1px solid $footer-border-color;
+    padding-top: 3.5rem;
+    width: 100%;
+    max-width: $footer-max-width;
+    margin: 0 auto;
+    align-content: center;
+    display: flex;
+    box-sizing: border-box;
+}
+.container-footer .container-footer-logo{
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 1.5rem 3.5rem;
+    padding: 0.75rem 3.5rem;
+    border-right: 1px solid $footer-border-color;
+}
+.container-footer .container-footer-logo .container-footer-logo-img{
+    width: 7.2rem;
+    margin: 0 auto 2.8rem;
+    display: block;
+}
+
+.container-footer .container-footer-menu{
+    margin: 1.5rem 0;
+    padding: 0.75rem 0;
+    display: flex;
+}
+.container-footer .container-footer-menu .footer-menu-group{
+    list-style-type: none;
+    margin-right: 3.5rem;
+}
+.container-footer .container-footer-menu .footer-menu-group .footer-menu-item{
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: $footer-font-size;
+}
+.container-footer .container-footer-menu .footer-menu-group .footer-link{
+    display: block;
+    margin-bottom: 1rem;
+    color: $footer-link-text-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container-footer .container-footer-menu .footer-menu-group .footer-link:hover{
+    color: $footer-text-hover-color;
+    text-decoration: underline;
+}
+
+.copyright-footer{
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 70%;
+    margin: 2.5rem auto 0;
+    padding: 0 5%;
+    font-size: $footer-font-size;
+    color: $footer-copyright-text-color;
+}
+
+.footer .container-proud-member-footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.5em;
+}
+.footer .container-proud-member-footer .text-proud-member-footer{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0.6rem;
+    font-size: $footer-font-size;
+    color: $footer-copyright-text-color;
+}
+.footer .container-proud-member-footer .logo-footer{
+    margin: 1.2rem;
+    height: 2.8rem;
+    width: auto;
+}
+.footer .container-proud-member-footer .separator-footer{
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: block;
+    width: 2px;
+    background-color: $footer-separator-color;
+    margin: 0 0.7rem;
+    height: 1.1rem;
+}

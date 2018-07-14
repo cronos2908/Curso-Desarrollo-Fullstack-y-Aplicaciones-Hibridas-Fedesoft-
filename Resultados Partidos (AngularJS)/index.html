@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app = "Aplicacion">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resultados Partidos</title>
+    <link rel="shorcut icon" type="image/png" href="img/icons8-soccer-ball-100.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
+    <script src="librerias/angularJS/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body ng-controller="ejemploCtrl">
+    <div class="container-resumen">
+        <div class="container-encabezado">
+            <div class="titulo-encabezado">Resultados Partidos</div>
+        </div>
+        <div class="container-resultados">
+            <div class="container-partido" ng-repeat="equipo in equipos" ng-if="(equipos.indexOf(equipo) % 2 == 0)">
+                <div class="nombre-partido">{{equipo}} vs. {{equipos[equipos.indexOf(equipo) + 1]}}</div>
+                <div class="container-resultado-partido">                    
+                    <div class="container-equipo-local">
+                        <img src="http://www.countryflags.io/{{cod_equipos[equipos.indexOf(equipo)]}}/shiny/64.png">
+                        <div class="equipo-local">{{equipo}}</div>
+                    </div>
+                    <div class="resultados">{{goles[equipos.indexOf(equipo)]}}<span>-</span>{{goles[equipos.indexOf(equipo) + 1]}}</div>
+                    <div class="container-equipo-visitante">
+                        <img src="http://www.countryflags.io/{{cod_equipos[equipos.indexOf(equipo) + 1]}}/shiny/64.png">
+                        <div class="equipo-visitante">{{equipos[equipos.indexOf(equipo) + 1]}}</div>
+                    </div>
+                </div>
+                <div class="container-separador">
+                    <span></span>
+                </div>
+                <div class="container-detalles-goles">
+                    <div class="goles-local">
+                        <div class="detalles-gol" ng-repeat="goal in partidos[equipos.indexOf(equipo)/2].home_team_events" ng-if="goal.type_of_event == 'goal'">{{goal.player.toLowerCase()}} {{goal.time}}</div>
+                        <div class="detalles-gol" ng-repeat="goal in partidos[equipos.indexOf(equipo)/2].home_team_events" ng-if="goal.type_of_event == 'goal-penalty'">{{goal.player.toLowerCase()}} {{goal.time}} (P)</div>
+                        <div class="detalles-gol" ng-repeat="goal in partidos[equipos.indexOf(equipo)/2].away_team_events" ng-if="goal.type_of_event == 'goal-own'">{{goal.player.toLowerCase()}} {{goal.time}} (GEC)</div> 
+                    </div>
+                    <img class="soccer-ball-img" src="img/soccer-ball-retina.png" alt="Soccer-Ball-Icon">
+                    <div class="goles-visitante">
+                        <div class="detalles-gol" ng-repeat="goal in partidos[equipos.indexOf(equipo)/2].away_team_events" ng-if="goal.type_of_event == 'goal'">{{goal.player.toLowerCase()}} {{goal.time}}</div>
+                        <div class="detalles-gol" ng-repeat="goal in partidos[equipos.indexOf(equipo)/2].away_team_events" ng-if="goal.type_of_event == 'goal-penalty'">{{goal.player.toLowerCase()}} {{goal.time}} (P)</div>
+                        <div class="detalles-gol" ng-repeat="goal in partidos[equipos.indexOf(equipo)/2].home_team_events" ng-if="goal.type_of_event == 'goal-own'">{{goal.player.toLowerCase()}} {{goal.time}} (GEC)</div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

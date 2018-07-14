@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+@import 'header';
+@import "section-01";
+@import "section-02";
+@import "section-03";
+@import "section-04";
+@import "section-06";
+@import "section-07";
+@import "section-08";
+@import "section-09";
+@import "section-10";
+@import 'footer';
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+
+html {
+    font-size: $body-font-size;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: block;
+}
+
+.raiz {
+    display: block;
+}
+
+.layout-main {
+    background-color: $body-background-color;
+    font-family: 'Muli', cursive;
+    font-size: 1rem;
+    color: $body-text-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}

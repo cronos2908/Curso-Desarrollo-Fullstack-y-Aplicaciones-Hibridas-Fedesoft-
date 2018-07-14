@@ -1,0 +1,82 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.section-07-index-configurator{
+    color: $section-07-text-color;
+    background-image: linear-gradient(-90deg, $section-07-gradient-color-1 0%, $section-07-gradient-color-2 100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $section-07-max-width;
+    padding: 0 1.43rem;
+    margin: 0 auto;
+}
+
+.container-content-section-07{
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $main-max-width;
+    padding: 0 1.43rem;
+    margin: 0 auto;
+}
+
+.container-content-section-07 .text-section-07{
+    padding: 8.57rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 100%;
+    max-width: 38.57rem;
+    margin-right: 4.28rem;
+}
+.container-content-section-07 .text-section-07 h2{
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 2.28rem;
+    line-height: 120%;
+    margin: 0 auto 2.14rem;   
+}
+.container-content-section-07 .text-section-07 p{
+    font-size: 1.14rem;
+    line-height: 160%;
+    margin: 0;
+}
+.container-content-section-07 .text-section-07 .container-link-section-07{
+    display: block;
+    width: 100%;
+    margin-top: 2.14rem;    
+}
+.container-content-section-07 .text-section-07 .container-link-section-07 .single-link-section-07{
+    display: flex;
+    align-items: center;
+    font-size: 1.14rem;
+}
+.container-content-section-07 .text-section-07 .container-link-section-07 .link-section-07{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.71rem 1.43rem;
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #2D2D2D;
+    color: $section-07-text-color;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container-content-section-07 .text-section-07 .container-link-section-07 .link-section-07:hover{
+    padding: 0.86rem 1.71rem;
+    cursor: pointer;
+}
+
+.container-content-section-07 .image-section-07{
+    background-image: url("../img/Section-07-Configurator.png");
+    display: flex;
+    width: 100%;
+    background-position: center right;
+}

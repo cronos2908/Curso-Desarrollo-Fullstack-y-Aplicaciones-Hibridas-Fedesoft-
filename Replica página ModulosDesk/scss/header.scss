@@ -1,0 +1,155 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.header {
+    background-color: $header-background-color;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: block;
+}
+
+.container-header {
+    padding: 2.15rem 0.7rem;
+    box-sizing: border-box;
+    color: $header-text-color;
+    font-size: $header-font-size;
+    width: 100%;
+    max-width: $header-max-width;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-header .container-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container-header .container-menu-header .menu-izq-header {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.container-header .menu-link {
+    padding: 0.32rem;
+    margin: 0.32rem;
+    font-size: $header-font-size;
+    color: $header-text-color;
+    text-decoration: none;
+    transition: all 0.35s $header-transition-bezier;
+    transition-delay: initial;
+    cursor: pointer;
+}
+.container-header .menu-link:hover {
+    transform: translateY(-0.35rem);
+    color: $header-text-hover-color;
+}
+
+.container-header .menu-separator {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: block;
+    width: 1px;
+    background-color: $header-text-color;
+    margin: 0 0.7rem;
+    height: 1.7rem;
+}
+
+.container-header .boton-menu-more {
+    border: none;
+    outline: none;
+    font-size: $header-font-size;
+    padding: 0.32rem;
+    margin: 0.32rem;
+    color: $header-text-color;
+    transition: all 0.35s $header-transition-bezier;
+    transition-delay: initial;
+    background: transparent;
+    cursor: pointer;
+}
+.container-header .boton-menu-more:hover, .container-header .boton-menu-more-active {
+    color: $header-text-hover-color;
+    cursor: pointer;
+}
+.container-header .container-menu-header .svg-menu-more {
+    display: inline-block;
+    overflow: visible;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.25em;
+}
+
+.container-header .container-menu-header .container-logo-centro-header {
+    transition: all 0.5s $header-transition-bezier;
+}
+.container-header .container-menu-header .container-logo-centro-header:hover {
+    transform: translateY(-0.35rem);
+}
+.container-header .container-menu-header .logo-img {
+    display: block;
+    flex: 0 0 14.28571rem;
+    width: 14.28571rem;
+}
+
+.container-header .container-menu-header .menu-der-header {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container-header .menu-configurator {
+    padding: 0.32rem;
+    margin: 0.32rem;
+    font-size: $header-font-size;
+    font-weight: bold;
+    border-bottom: 0.14286rem solid $header-text-hover-color;
+    color: $header-text-color;
+    text-decoration: none;
+    transition: all 0.35s $header-transition-bezier;
+    transition-delay: initial;
+    cursor: pointer;
+}
+.container-header .menu-configurator:hover {
+    transform: translateY(-0.35rem);
+    color: $header-text-hover-color;
+}
+
+.container-header .menu-carrito {
+    padding: 0.32rem;
+    margin: 0.32rem;
+    color: $header-text-color;
+    transition: all 0.35s $header-transition-bezier;
+    transition-delay: initial;
+    cursor: pointer;
+}
+.container-header .menu-carrito:hover {
+    transform: translateY(0.35rem);
+}
+.container-header .svg-carrito {
+    display: inline-block;
+    overflow: visible;
+    width: 1.35em;
+    height: 1.35em;
+    vertical-align: -0.25em;
+}
+
+.container-header .menu-extra {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.4s $header-transition-bezier;
+}
+.container-header .menu-extra-visible {
+    padding: 1.07143rem 0;
+    opacity: 1;
+}

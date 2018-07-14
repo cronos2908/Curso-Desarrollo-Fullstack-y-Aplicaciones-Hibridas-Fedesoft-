@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+//body
+$body-background-color: #EEE;
+//resumen
+$border-color: rgb(138, 138, 138);
+$box-shadow-color: #333;
+$resumen-width: 60%;
+$resumen-width-portrait: 96%;
+//Encabezado
+$encabezado-background-color: rgb(33, 33, 33);
+$encabezado-text-color: #fff;
+//Container Resultados
+$container-resultados-background-color: #eeeeeec9;
+//Container Partido
+$container-partido-background-color: #eeeeee;
+//Nombre Partido
+$nombre-partido-background-color: rgb(29, 87, 194);
+$nombre-partido-text-color: #fff;
+//Container Separador Span
+$container-separador-span-background-color: #BBB;
+//Detalles Gol
+$detalles-gol-text-color: #333;
+
+body{
+    background-color: $body-background-color;
+    background-image: url("../img/Soccer-Stadium-Background.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container-resumen{
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    width: $resumen-width;
+    margin: 0 auto;
+    border: 2px solid border-color;
+    box-shadow: 0px 5px 8px -3px $box-shadow-color;
+}
+
+.container-encabezado{
+    display: block;
+    background-color: $encabezado-background-color;
+    align-items: center;
+    border-bottom: 2px solid border-color;     
+}
+.titulo-encabezado{
+    color: $encabezado-text-color;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    padding: 0.5rem 0;
+}
+
+.container-resultados{
+    align-items: center;
+    background-color: $container-partido-background-color;
+    background-color: $container-resultados-background-color;
+    padding: 1%;
+}
+
+.container-partido{
+    display: block;
+    width: 90%; 
+    background-color: $container-partido-background-color;
+    border: 1.5px solid border-color;
+    box-shadow: 0px 5px 8px -3px $box-shadow-color;
+    box-sizing: content-box;
+    margin: 0 auto 2rem;
+}
+
+.container-partido .nombre-partido{
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: $nombre-partido-background-color;
+    color: $nombre-partido-text-color;
+    box-shadow: 0px 3px 5px -1px $box-shadow-color;
+}
+
+.container-partido .container-resultado-partido{
+    display: flex;
+    padding: 0.8rem 0.8rem;
+}
+.container-partido .container-resultado-partido .container-equipo-local{
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    width: 50%;
+}
+.container-partido .container-resultado-partido .resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.container-partido .container-resultado-partido .resultados span{
+    padding: 0 2rem;
+}
+.container-partido .container-resultado-partido .container-equipo-visitante{
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    width: 50%;
+}
+
+.container-partido .container-separador{
+    display: block;
+    width: 100%;
+}
+.container-partido .container-separador span{
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    width: 90%;    
+    background-color: $container-separador-span-background-color;
+}
+
+.container-partido .container-detalles-goles{
+    display: flex;
+    padding: 0.8rem 0.8rem;
+}
+.container-partido .container-detalles-goles .goles-local{
+    flex: 1;
+    padding: 0 1rem;
+    text-align: left; 
+}
+.container-partido .container-detalles-goles .soccer-ball-img{
+    flex: 1;
+    max-width: 32px;
+    max-height: 32px;
+}
+.container-partido .container-detalles-goles .goles-visitante{
+    flex: 1;
+    padding: 0 1rem;
+    text-align: right; 
+}
+.container-partido .container-detalles-goles .detalles-gol{
+    margin: 0.3rem 0 0;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    color: $detalles-gol-text-color;
+}
+
+@media screen and (orientation: portrait) {
+    .container-resumen{
+        width: $resumen-width-portrait;
+    }
+    .container-partido .container-resultado-partido{
+        display: flex;
+        padding: 0.8rem 0.2rem;
+    }
+    .container-partido .container-resultado-partido .resultados span{
+        padding: 0 0.5rem;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .container-resumen{
+        width: $resumen-width;
+    }
+    .container-partido .container-resultado-partido{
+        display: flex;
+        padding: 0.8rem 0.2rem;
+    }
+    .container-partido .container-resultado-partido .resultados span{
+        padding: 0 2rem;
+    }
+}

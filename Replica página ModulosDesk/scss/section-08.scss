@@ -1,0 +1,85 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.section-08-newsletter-signup{
+    display: block;
+    color: $section-08-main-text-color;
+    padding: 5.71rem 1.43rem 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $main-max-width;    
+}
+
+.intro-section-08{
+    margin-bottom: 2.86rem;
+    width: 100%;
+    max-width: 64.29rem;
+}
+.intro-section-08 h2{
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 2.28rem;
+    line-height: 2.85rem;
+    margin: 0 0 1.78rem;
+}
+.intro-section-08 p{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    margin: 0.71rem 0;
+    font-size: 1rem;
+    line-height: 160%;
+}
+.intro-section-08 p a{
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    color: $section-08-secondary-text-color;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.intro-section-08 h4{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    margin: 1.07rem 0;
+    font-size: 1.28rem;
+    line-height: 1.93rem;
+    color: $section-08-secondary-text-color;
+}
+
+.signup-form-section-08 .container-input-section-08{
+    display: flex;
+    width: 100%;
+    max-width: 34.28rem;
+}
+.signup-form-section-08 .container-input-section-08 .input-field-section-08{
+    flex: 1 1 100%;
+    font-size: 1.14rem;
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    border: 1px solid $section-08-input-border-color;
+    padding: 0.71rem;
+    cursor: text;
+}
+.signup-form-section-08 .container-input-section-08 .input-field-section-08:focus{
+    outline: none;
+}
+.signup-form-section-08 .container-input-section-08 .submit-button-section-08{
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.35rem 1.43rem;
+    background-color: $section-08-button-color;
+    color: $section-08-button-text-color;
+    border: none;
+    outline: none;
+    font-size: 1.14rem;
+    transition: 0.3s all ease-in-out;
+}
+.signup-form-section-08 .container-input-section-08 .submit-button-section-08:hover{
+    background-color: #1f8094;
+    cursor: pointer;
+}

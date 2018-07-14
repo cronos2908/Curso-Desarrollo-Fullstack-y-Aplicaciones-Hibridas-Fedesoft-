@@ -1,0 +1,75 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.section-02-surface{
+    display: flex;
+    align-items: center;
+    background-color: $section-02-background-color;
+    border: 1px solid $section-02-border-color;
+    position: relative;
+    margin-bottom: -5.7rem;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: $section-02-max-width;
+    top: -5.7rem;
+    z-index: 2;    
+    box-sizing: border-box;
+}
+
+.section-02-surface .image-section-02{
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    width: 39.3rem;
+}
+
+.section-02-surface .content-section-02{
+    display: block;
+    padding: 4.28rem;
+}
+.section-02-surface .content-section-02 h2{
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 2.28rem;
+    line-height: 2.85rem;
+    margin: 0 0 1.78rem;
+}
+.section-02-surface .content-section-02 p{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    margin: 0.72rem 0;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+.content-section-02 .container-link-section-02{
+    display: block;
+    margin-top: 2.75rem;
+}
+
+.content-section-02 .container-link-section-02 .single-link-section-02{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.content-section-02 .container-link-section-02 .single-link-section-02 .link-section-02{
+    padding: 0.72rem 1.28rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: $section-02-link-background-color;
+    color: $section-02-link-text-color;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}.content-section-02 .container-link-section-02 .single-link-section-02 .link-section-02:hover{
+    padding: 0.72rem 1.43rem;
+    cursor: pointer;
+}

@@ -1,0 +1,172 @@
+/* 
+    Created on : 16/06/2018, 01:34:27 PM
+    Author     : User
+*/
+@import "variables";
+
+.section-04-index-image-configurator{
+    background-image: url("../img/Section-04-Modules-Desk.jpg");
+    height: 580px;
+    background-position: center center;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $section-04-max-width;
+    padding: 0 1.43rem;
+    margin: 0 auto;
+}
+
+.container-pin-section-04{
+    position: absolute;
+}
+.container-pin-active-section-04{
+    z-index: 2;
+}
+
+.container-pin-section-04 .pin-button-section-04{
+    position: relative;
+    z-index: 2;
+    width: 4.57rem;
+    height: 4.57rem;
+    background-color: $section-04-background-color;
+    color: $section-04-text-color;
+    border: 1px solid $section-04-border-color;
+    outline: none;
+    box-shadow: 0 2px 4px 0 $section-04-pin-shadow-color;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: rotate(0) scale(1);
+}
+.container-pin-section-04 .pin-button-section-04:hover{
+    box-shadow: 0 6px 12px 0 $section-04-pin-shadow-color;
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+.container-pin-section-04 .pin-button-section-04.pin-button-active-section-04{
+    transform: rotate(45deg) scale(0.8);
+}
+.container-pin-section-04 .pin-button-section-04 .svg-inline-section-04{
+    display: inline-block;
+    width: 0.875em;
+    height: 1em;
+    vertical-align: -.125em;
+    font-size: 2.28rem;
+}
+
+.container-pin-section-04 .info-wrapper-section-04{
+    position: absolute;
+    bottom: 2.28rem;
+    left: 2.28rem;
+    transition: 0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(-3.57143rem) translateY(3.57143rem);
+    opacity: 0;
+}
+.container-pin-section-04 .info-wrapper-section-04.info-wrapper-active-section-04{
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+}
+
+.info-wrapper-section-04 .info-container-section-04{
+    width: 21.43rem;
+    display: flex;
+    padding: 1.42rem;
+    background-color: $section-04-background-color;
+    border: 1px solid #eee;
+}
+.info-wrapper-section-04 .info-container-no-image-section-04{
+    width: auto;
+}
+.info-wrapper-section-04 .info-container-section-04 .info-main-section-04{
+    flex: 0 0 10.71rem;
+    width: 10.71rem;
+    padding: 1.43rem 0;
+}
+.info-wrapper-section-04 .info-container-section-04 .info-main-section-04 .item-name-section-04{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    font-size: 1.28rem;
+    line-height: 130%;
+    margin: 0;
+}
+.info-wrapper-section-04 .info-container-section-04 .info-main-section-04 .separator-section-04{
+    width: 3.57rem;
+    height: 1px;
+    background-color: #28A5BE;
+    display: block;
+    margin: 1.07rem 0;
+}
+.info-wrapper-section-04 .info-container-section-04 .info-main-section-04 .item-description-section-04{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 160%;
+    margin: 0;
+}
+.info-wrapper-section-04 .info-container-section-04 .info-main-section-04 .item-price-section-04{
+    display: block;
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    color: #28A5BE;
+    margin: 1.07rem 0 0;
+}
+
+.info-wrapper-section-04 .info-container-section-04 .info-graphic-section-04{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    left: 2.86rem;
+}
+.info-wrapper-section-04 .info-container-section-04 .info-graphic-section-04 img{
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    margin: 1.43rem auto;
+    transition: 1.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(0);
+}
+.info-wrapper-section-04 .info-container-section-04 .info-graphic-section-04 .graphic-shadow-section-04{
+    position: absolute;
+    z-index: 1;
+    width: 7.14rem;
+    margin-left: -3.57rem;
+    left: 50%;
+    bottom: 0.71rem;
+    height: 0.36rem;
+    background-color: #43525A;
+    border-radius: 100%;
+    filter: blur(7px);
+    transform: scale(1);
+    transition: 1.8s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: block;
+}
+.info-wrapper-section-04 .info-container-section-04:hover .info-graphic-section-04 img{
+    transform: translateY(-0.71429rem);
+}
+.info-wrapper-section-04 .info-container-section-04:hover .info-graphic-section-04 .graphic-shadow-section-04{
+    transform: scale(0.8);
+}
+
+.info-wrapper-section-04 .info-container-section-04 .link-section-04{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -1.28rem;
+    right: -1.07rem;
+    height: 2.57rem;
+    padding: 0 2.14rem;
+    font-size: 1rem;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+    background-color: #28A5BE;
+}
+.info-wrapper-section-04 .info-container-section-04 .link-section-04:hover{
+    background-color: #1b6e7f;
+    cursor: pointer;
+}
